@@ -1,1 +1,477 @@
-[200~Authenticating with public key Task
+Using username "ubuntu".
+Authenticating with public key "Task"
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jul 19 13:44:15 UTC 2025
+
+  System load:  0.0               Processes:             103
+  Usage of /:   25.3% of 6.71GB   Users logged in:       0
+  Memory usage: 20%               IPv4 address for enX0: 172.31.11.221
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-11-221:~$ git -v
+git version 2.43.0
+ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git^M
+: No such file or directoryikitachavan06/Devops.git
+ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git
+-bash: https://github.com/nikitachavan06/Devops.git: No such file or directory
+ubuntu@ip-172-31-11-221:~$ git clone https://github.com/nikitachavan06/Devops.git
+Cloning into 'Devops'...
+warning: You appear to have cloned an empty repository.
+ubuntu@ip-172-31-11-221:~$ ls
+Devops
+ubuntu@ip-172-31-11-221:~$ cd Devops
+ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+total 12
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:04 .
+drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+ubuntu@ip-172-31-11-221:~/Devops$ echo "# Devops" >> README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+total 16
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:08 .
+drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+-rw-rw-r-- 1 ubuntu ubuntu    9 Jul 19 14:08 README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls -help
+ls: invalid option -- 'e'
+Try 'ls --help' for more information.
+ubuntu@ip-172-31-11-221:~/Devops$ man ls
+ubuntu@ip-172-31-11-221:~/Devops$ cd
+ubuntu@ip-172-31-11-221:~$ cd
+ubuntu@ip-172-31-11-221:~$ ..
+..: command not found
+ubuntu@ip-172-31-11-221:~$ cd..
+cd..: command not found
+ubuntu@ip-172-31-11-221:~$ ls
+Devops
+ubuntu@ip-172-31-11-221:~$ cd Devops
+ubuntu@ip-172-31-11-221:~/Devops$ cd~
+Command 'cd~' not found, did you mean:
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.2)
+  command 'cdi' from deb cdo (2.3.0-1)
+  command 'cdo' from deb cdo (2.3.0-1)
+  command 'cdp' from deb irpas (0.10-9)
+  command 'cdw' from deb cdw (0.8.1-3)
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdb' from deb tinycdb (0.81-1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ Git branch -a
+Command 'Git' not found, did you mean:
+  command 'git' from deb git (1:2.43.0-1ubuntu7.2)
+  command 'vit' from deb vit (2.3.2-1)
+  command 'wit' from deb wit (3.01a-4.1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ Git branch -a
+Command 'Git' not found, did you mean:
+  command 'wit' from deb wit (3.01a-4.1)
+  command 'vit' from deb vit (2.3.2-1)
+  command 'git' from deb git (1:2.43.0-1ubuntu7.2)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ git add README.md
+ubuntu@ip-172-31-11-221:~/Devops$ git commit -m "first commit"
+[main (root-commit) 1f0a1c9] first commit
+ Committer: Ubuntu <ubuntu@ip-172-31-11-221.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+ubuntu@ip-172-31-11-221:~/Devops$ git branch
+* main
+ubuntu@ip-172-31-11-221:~/Devops$ git branch -M main
+ubuntu@ip-172-31-11-221:~/Devops$ git remote add origin https://github.com/nikitachavan06/Devops.git
+error: remote origin already exists.
+ubuntu@ip-172-31-11-221:~/Devops$ git push -u origin main
+Username for 'https://github.com': ^C
+ubuntu@ip-172-31-11-221:~/Devops$ git push -u origin main
+Username for 'https://github.com': nikitachavan06
+Password for 'https://nikitachavan06@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/nikitachavan06/Devops.git/'
+ubuntu@ip-172-31-11-221:~/Devops$ git push -u origin main
+Username for 'https://github.com': nikitachavan06
+Password for 'https://nikitachavan06@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/nikitachavan06/Devops.git/'
+ubuntu@ip-172-31-11-221:~/Devops$ git push -u origin main
+Username for 'https://github.com': nikitachavan06
+Password for 'https://nikitachavan06@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 239 bytes | 239.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nikitachavan06/Devops.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+total 16
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:08 .
+drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:28 ..
+drwxrwxr-x 8 ubuntu ubuntu 4096 Jul 19 14:34 .git
+-rw-rw-r-- 1 ubuntu ubuntu    9 Jul 19 14:08 README.md
+ubuntu@ip-172-31-11-221:~/Devops$ vim readme.d
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+README.md
+ubuntu@ip-172-31-11-221:~/Devops$ git checkout -b test
+Switched to a new branch 'test'
+ubuntu@ip-172-31-11-221:~/Devops$ git branch
+  main
+* test
+ubuntu@ip-172-31-11-221:~/Devops$ echo "Hello" >> Hello.txt
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+Hello.txt  README.md
+ubuntu@ip-172-31-11-221:~/Devops$ git add .
+ubuntu@ip-172-31-11-221:~/Devops$ git commit -m "abc"
+[test 2c30852] abc
+ Committer: Ubuntu <ubuntu@ip-172-31-11-221.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+ubuntu@ip-172-31-11-221:~/Devops$ git push origin test
+Username for 'https://github.com': nikitachavan06
+Password for 'https://nikitachavan06@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/nikitachavan06/Devops/pull/new/test
+remote:
+To https://github.com/nikitachavan06/Devops.git
+ * [new branch]      test -> test
+ubuntu@ip-172-31-11-221:~/Devops$ man checkout
+No manual entry for checkout
+ubuntu@ip-172-31-11-221:~/Devops$ man ls
+ubuntu@ip-172-31-11-221:~/Devops$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ubuntu@ip-172-31-11-221:~/Devops$ git branch
+* main
+  test
+ubuntu@ip-172-31-11-221:~/Devops$ git switch test
+Switched to branch 'test'
+ubuntu@ip-172-31-11-221:~/Devops$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ubuntu@ip-172-31-11-221:~/Devops$ git merge test
+Updating 1f0a1c9..2c30852
+Fast-forward
+ Hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+Hello.txt  README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ^C
+ubuntu@ip-172-31-11-221:~/Devops$ ^C
+ubuntu@ip-172-31-11-221:~/Devops$ echo "^[[200~Authenticating with public key "Task"" >> my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$ Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+-bash: syntax error near unexpected token `('
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$  * Documentation:  https://help.ubuntu.com
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-11-221:~$ git -v
+git version 2.43.0
+ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git^M
+: No such file or directoryikitachavan06/Devops.git
+ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git
+-bash: https://github.com/nikitachavan06/Devops.git: No such file or directory
+ubuntu@ip-172-31-11-221:~$ git clone https://github.com/nikitachavan06/Devops.git
+Cloning into 'Devops'...
+warning: You appear to have cloned an empty repository.
+ubuntu@ip-172-31-11-221:~$ ls
+Devops
+ubuntu@ip-172-31-11-221:~$ cd Devops
+ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+total 12
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:04 .
+drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+ubuntu@ip-172-31-11-221:~/Devops$ echo "# Devops" >> README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+total 16
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:08 .
+drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+-rw-rw-r-- 1 ubuntu ubuntu    9 Jul 19 14:08 README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+README.md
+ubuntu@ip-172-31-11-221:~/Devops$ ls -help
+ls: invalid option -- 'e'
+Try 'ls --help' for more information.
+ubuntu@ip-172-31-11-221:~/Devops$ man ls
+ubuntu@ip-172-31-11-221:~/Devops$ cd
+ubuntu@ip-172-31-11-221:~$ cd
+ubuntu@ip-172-31-11-221:~$ ..
+..: command not found
+ubuntu@ip-172-31-11-221:~$ cd..
+cd..: command not found
+ubuntu@ip-172-31-11-221:~$ ls
+Devops
+^[[201~Hello.txt: command not found
+ubuntu@ip-172-31-11-221:~/Devops$  * Management:     https://landscape.canonical.com
+Hello.txt: command not found
+ubuntu@ip-172-31-11-221:~/Devops$  * Support:        https://ubuntu.com/pro
+Hello.txt: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$  System information as of Sat Jul 19 13:44:15 UTC 2025
+System: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$   System load:  0.0               Processes:             103
+System: command not found
+ubuntu@ip-172-31-11-221:~/Devops$   Usage of /:   25.3% of 6.71GB   Users logged in:       0
+Command 'Usage' not found, did you mean:
+  command 'osage' from deb graphviz (2.42.2-9ubuntu0.1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$   Memory usage: 20%               IPv4 address for enX0: 172.31.11.221
+Memory: command not found
+ubuntu@ip-172-31-11-221:~/Devops$   Swap usage:   0%
+Swap: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ Expanded Security Maintenance for Applications is not enabled.
+Expanded: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ 0 updates can be applied immediately.
+0: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ Enable ESM Apps to receive additional future security updates.
+Enable: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ See https://ubuntu.com/esm or run: sudo pro status
+Command 'See' not found, did you mean:
+  command 'tee' from deb coreutils (9.4-2ubuntu2)
+  command 'ree' from deb ree (1.4.1-2)
+  command 'see' from deb mailcap (3.70+nmu1ubuntu1)
+  command 'pee' from deb moreutils (0.67-1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ The list of available updates is more than a week old.
+Command 'The' not found, did you mean:
+  command 'the' from deb the (3.3~rc1-3.2)
+  command 'he' from deb node-he (1.2.0-4)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ To check for new updates run: sudo apt update
+To: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ The programs included with the Ubuntu system are free software;
+Command 'The' not found, did you mean:
+  command 'he' from deb node-he (1.2.0-4)
+  command 'the' from deb the (3.3~rc1-3.2)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ the exact distribution terms for each program are described in the
+Command 'the' not found, but can be installed with:
+sudo apt install the
+ubuntu@ip-172-31-11-221:~/Devops$ individual files in /usr/share/doc/*/copyright.
+individual: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+Ubuntu: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ applicable law.
+applicable: command not found
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ To run a command as administrator (user "root"), use "sudo <command>".
+-bash: syntax error near unexpected token `('
+ubuntu@ip-172-31-11-221:~/Devops$ See "man sudo_root" for details.
+Command 'See' not found, did you mean:
+  command 'tee' from deb coreutils (9.4-2ubuntu2)
+  command 'pee' from deb moreutils (0.67-1)
+  command 'see' from deb mailcap (3.70+nmu1ubuntu1)
+  command 'ree' from deb ree (1.4.1-2)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ git -v
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ git version 2.43.0
+git version 2.43.0
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git^M
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ : No such file or directoryikitachavan06/Devops.git
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ https://github.com/nikitachavan06/Devops.git
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ -bash: https://github.com/nikitachavan06/Devops.git: No such file or directory
+-bash:: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ git clone https://github.com/nikitachavan06/Devops.git
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ Cloning into 'Devops'...
+Cloning: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ warning: You appear to have cloned an empty repository.
+warning:: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ ls
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ Devops
+Devops: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ cd Devops
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ total 12
+Command 'total' not found, did you mean:
+  command 'topal' from deb topal (81-2ubuntu2.1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:04 .
+drwxrwxr-x: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxr-x---: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+drwxrwxr-x: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ echo "# Devops" >> README.md
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ ls -la
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ total 16
+Command 'total' not found, did you mean:
+  command 'topal' from deb topal (81-2ubuntu2.1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ drwxrwxr-x 3 ubuntu ubuntu 4096 Jul 19 14:08 .
+drwxrwxr-x: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ drwxr-x--- 5 ubuntu ubuntu 4096 Jul 19 14:04 ..
+drwxr-x---: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ drwxrwxr-x 7 ubuntu ubuntu 4096 Jul 19 14:04 .git
+drwxrwxr-x: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ -rw-rw-r-- 1 ubuntu ubuntu    9 Jul 19 14:08 README.md
+-rw-rw-r--: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ ls
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ README.md
+README.md: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ ls -help
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ ls: invalid option -- 'e'
+Command 'ls:' not found, did you mean:
+  command 'lsh' from deb lsh-client (2.1-14)
+  command 'lsw' from deb suckless-tools (47-1)
+  command 'lsm' from deb lsm (1.0.4-2)
+  command 'ls' from deb coreutils (9.4-2ubuntu2)
+  command 'lsd' from deb lsd (0.23.1-8)
+  command 'lsc' from deb livescript (1.6.1+dfsg-3)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ Try 'ls --help' for more information.
+Command 'Try' not found, did you mean:
+  command 'pry' from deb pry (0.14.2-1)
+Try: sudo apt install <deb name>
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ man ls
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~/Devops$ cd
+-bash: ubuntu@ip-172-31-11-221:~/Devops$: No such file or directory
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ cd
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ ..
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ..: command not found
+..:: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ cd..
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ cd..: command not found
+cd..:: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ubuntu@ip-172-31-11-221:~$ ls
+ubuntu@ip-172-31-11-221:~$: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ Devops
+Devops: command not found
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+Hello.txt  README.md  my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$ vim my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$ ls
+Hello.txt  README.md  my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$ git add .
+ubuntu@ip-172-31-11-221:~/Devops$ git commit -m "lecture"
+[main bba6b5b] lecture
+ Committer: Ubuntu <ubuntu@ip-172-31-11-221.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$ git push origin main
+Username for 'https://github.com': nikitachavan06
+Password for 'https://nikitachavan06@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nikitachavan06/Devops.git
+   1f0a1c9..bba6b5b  main -> main
+ubuntu@ip-172-31-11-221:~/Devops$ cat my_work.txt
+Authenticating with public key Task
+ubuntu@ip-172-31-11-221:~/Devops$ vim my_work.txt
+ubuntu@ip-172-31-11-221:~/Devops$
